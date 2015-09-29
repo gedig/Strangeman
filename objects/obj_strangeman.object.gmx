@@ -34,6 +34,8 @@ xMoveSpeed = 1;
 yGravity = 1;
 yGravityMax = 8;
 
+xPos = -1;  // Used for only creating hair when the x delta is past a certain threshold
+
 xDirection = 0;
 yDirection = 270;
 
@@ -66,12 +68,15 @@ onFloor = false;
           <argument>
             <kind>1</kind>
             <string>
-if (image_index == 1) {
-    tempObj = instance_create(x,y - 20,obj_coolWave);
-} else {
-    tempObj = instance_create(x,y,obj_coolWave);
+// Hair stuff:
+if (xSpeed &gt; 1 || xSpeed &lt; -1) {
+    if (image_index == 1) {
+        tempObj = instance_create(x,y - 20,obj_coolWave);
+    } else {
+        tempObj = instance_create(x,y,obj_coolWave);
+    }
+    tempObj.image_index = self.image_index;
 }
-tempObj.image_index = self.image_index;
 
 //Inputs
 var inputLeft = false, inputRight = false;
@@ -131,7 +136,7 @@ if ( place_meeting( x, y + ySpeed, obj_floor_1)) {
     }
 } else {
     ySpeed += yGravity; 
-    onFLoor = false;
+    onFloor = false;
 }
 
 if ((!hBool and !vBool) and place_meeting(x + xSpeed, y + ySpeed, obj_floor_1)) {
@@ -146,6 +151,15 @@ if (onFloor and (keyboard_check_pressed( vk_up ) or keyboard_check_pressed( vk_s
     onFloor = false;
 }
 
+// Door Check:
+var door = instance_place( x, y, obj_door );
+if (door != noone) {
+    // We are on a door.
+    if (keyboard_check_pressed( vk_up )) {
+        room_goto(door.destination);
+    }
+}
+
 y += ySpeed;
 
 if (onFloor) {
@@ -154,6 +168,30 @@ if (onFloor) {
     image_index = 0;
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_sickjump_right">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>ySpeed = -20;
+xSpeed = 20;
 </string>
           </argument>
         </arguments>

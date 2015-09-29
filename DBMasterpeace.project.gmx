@@ -28,6 +28,8 @@
     <background>background\bg_darktower</background>
     <background>background\bg_darktower_2</background>
     <background>background\bg_tower_3</background>
+    <background>background\darktower_32tile_002</background>
+    <background>background\darktower_32tile_003</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">

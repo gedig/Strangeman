@@ -69,7 +69,7 @@ spinSpeed = 0;
             <kind>1</kind>
             <string>
 // Hair stuff:
-if (xSpeed &gt; 1 || xSpeed &lt; -1) {
+if (xSpeed &gt; 1 || xSpeed &lt; -1 || ySpeed &gt; 1 || ySpeed &lt; -1) { // Any movement beyond threshold
     if (image_index == 1) {
         tempObj = instance_create(x,y - 20,obj_coolWave);
     } else {

@@ -34,8 +34,6 @@ xMoveSpeed = 1;
 yGravity = 1;
 yGravityMax = 8;
 
-xPos = -1;  // Used for only creating hair when the x delta is past a certain threshold
-
 xDirection = 0;
 yDirection = 270;
 
@@ -45,6 +43,8 @@ upOrDown = -1;
 leftOrRight = 1;
 
 onFloor = false;
+spinAngle = 0;
+spinSpeed = 0;
 </string>
           </argument>
         </arguments>
@@ -133,8 +133,11 @@ if ( place_meeting( x, y + ySpeed, obj_floor_1)) {
     vBool = true;
     if (yDirection = 270) {
         onFloor = true;
+        spinSpeed = 0;  // Snap the character back upright. If we want a wipeout if your
+        spinAngle = 0;  // angle is a certain threshold then this is the place to do it.
     }
 } else {
+    spinAngle = spinAngle + spinSpeed;
     ySpeed += yGravity; 
     onFloor = false;
 }
@@ -192,6 +195,8 @@ if (onFloor) {
             <kind>1</kind>
             <string>ySpeed = -20;
 xSpeed = 20;
+
+spinSpeed = 10;
 </string>
           </argument>
         </arguments>
@@ -214,8 +219,8 @@ xSpeed = 20;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw_sprite_ext(spr_strangeman,0,x + xSpeed, y + ySpeed, 1, 1, 0, c_red, 0.75);
-draw_self();
+            <string>draw_sprite_ext(spr_strangeman,-1,x + xSpeed, y + ySpeed, 1, 1, spinAngle, c_white, 1);
+//draw_self();
 </string>
           </argument>
         </arguments>

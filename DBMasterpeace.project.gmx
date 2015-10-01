@@ -50,6 +50,7 @@
     <object>objects\obj_sickjump_right</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_load</room>
     <room>rooms\rm_main</room>
     <room>rooms\rm_dark_tower</room>
   </rooms>

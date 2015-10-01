@@ -9,40 +9,43 @@
     <sprite>sprites\spr_strangeman</sprite>
     <sprite>sprites\spr_hitbox</sprite>
     <sprite>sprites\spr_floor_1</sprite>
-    <sprite>sprites\sprite3</sprite>
+    <sprite>sprites\spr_skateboard</sprite>
     <sprite>sprites\spr_gourdon</sprite>
     <sprite>sprites\spr_hair</sprite>
-    <sprite>sprites\sprite6</sprite>
-    <sprite>sprites\sprite7</sprite>
-    <sprite>sprites\sprite8</sprite>
-    <sprite>sprites\darktower</sprite>
+    <sprite>sprites\spr_cloud1</sprite>
+    <sprite>sprites\spr_cloud2</sprite>
+    <sprite>sprites\spr_cloud3</sprite>
+    <sprite>sprites\spr_dark_tower</sprite>
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_dungeontile</sprite>
     <sprite>sprites\spr_mouth</sprite>
     <sprite>sprites\spr_squash</sprite>
-    <sprite>sprites\sprite14_darktower_dolphin</sprite>
+    <sprite>sprites\spr_dark_tower_dolphin</sprite>
     <sprite>sprites\spr_sickjump</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\background0</background>
-    <background>background\bg_darktower</background>
-    <background>background\bg_darktower_2</background>
-    <background>background\bg_tower_3</background>
-    <background>background\darktower_32tile_002</background>
-    <background>background\darktower_32tile_003</background>
+    <background>background\bg_main_room</background>
+    <background>background\bg_dark_tower</background>
+    <background>background\bg_dark_tower_2</background>
+    <background>background\bg_dark_tower_3</background>
+    <background>background\bg_dark_tower_4</background>
+    <background>background\bg_dark_tower_5</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\PlacePlayerAtDoor.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_strangeman</object>
     <object>objects\obj_floor_1</object>
-    <object>objects\obj_coolWave</object>
-    <object>objects\cloud1</object>
-    <object>objects\cloud2</object>
-    <object>objects\cloud3</object>
-    <object>objects\obj_hairControl</object>
-    <object>objects\object7</object>
+    <object>objects\obj_cool_wave</object>
+    <object>objects\obj_cloud_1</object>
+    <object>objects\obj_cloud_2</object>
+    <object>objects\obj_cloud_3</object>
+    <object>objects\obj_hair_control</object>
+    <object>objects\obj_dark_tower</object>
     <object>objects\obj_door</object>
-    <object>objects\obj_dungeontile</object>
+    <object>objects\obj_dungeon_tile</object>
     <object>objects\obj_gourdon</object>
     <object>objects\obj_mouth</object>
     <object>objects\obj_skwunchkin</object>

@@ -10,14 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>for (i = 0; i &lt; instance_number(obj_door); i++) {
-    door = instance_find(obj_door,i);
-    if (global.destination_door_id == door.door_id) {
-        player = instance_find(obj_strangeman,0);
-        player.x = door.x;
-        player.y = door.y - 15;
-    }
-}</code>
+  <code></code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -38,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="background0" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_main_room" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -268,24 +261,27 @@
     <instance objName="obj_floor_1" x="1568" y="672" name="inst_D1E4B0A7" locked="0" code="" scaleX="5.16129016876221" scaleY="5.16129016876221" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_1" x="1632" y="832" name="inst_3E18DBFE" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_strangeman" x="512" y="640" name="inst_57D85209" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud1" x="512" y="0" name="inst_9F76E4FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud2" x="832" y="0" name="inst_4F602DF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud3" x="64" y="32" name="inst_4F386874" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hairControl" x="0" y="0" name="inst_5786835F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object7" x="1060" y="97" name="inst_87FA09AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud3" x="448" y="-192" name="inst_9234212A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud1" x="1024" y="-32" name="inst_D590779D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud1" x="1312" y="64" name="inst_075340CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud2" x="-256" y="-32" name="inst_5D76D9DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud2" x="1184" y="-64" name="inst_A6FBF4AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud2" x="288" y="-64" name="inst_F3B2A064" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud2" x="-256" y="160" name="inst_AEA37E82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud2" x="0" y="-64" name="inst_9322DCD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud1" x="-96" y="-64" name="inst_474C3E66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud1" x="800" y="-64" name="inst_5A6D9733" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cloud1" x="64" y="32" name="inst_2F7C73FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="1216" y="832" name="inst_44689104" locked="0" code="door_id = 1;&#xA;destination = rm_dark_tower;&#xA;destination_door_id = 1;" scaleX="1.97000002861023" scaleY="1.22222220897675" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_1" x="512" y="0" name="inst_9F76E4FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_2" x="832" y="0" name="inst_4F602DF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_3" x="64" y="32" name="inst_4F386874" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hair_control" x="0" y="0" name="inst_5786835F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dark_tower" x="1060" y="97" name="inst_87FA09AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_3" x="448" y="-192" name="inst_9234212A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_1" x="1024" y="-32" name="inst_D590779D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_1" x="1312" y="64" name="inst_075340CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_2" x="-256" y="-32" name="inst_5D76D9DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_2" x="1184" y="-64" name="inst_A6FBF4AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_2" x="288" y="-64" name="inst_F3B2A064" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_2" x="-256" y="160" name="inst_AEA37E82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_2" x="0" y="-64" name="inst_9322DCD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_1" x="-96" y="-64" name="inst_474C3E66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_1" x="800" y="-64" name="inst_5A6D9733" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud_1" x="64" y="32" name="inst_2F7C73FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="1216" y="832" name="inst_44689104" locked="0" code="door_id = 1;&#xA;destination = rm_dark_tower;&#xA;destination_door_id = 1;&#xA;" scaleX="2" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_sickjump_right" x="1536" y="800" name="inst_5DEBA479" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="575" y="832" name="inst_248BDE33" locked="0" code="door_id = 3;&#xA;destination = rm_main;&#xA;destination_door_id = 2;&#xA;" scaleX="2" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="575" y="672" name="inst_10E7BBF5" locked="0" code="door_id = 2;&#xA;destination = rm_main;&#xA;destination_door_id = 3;&#xA;" scaleX="2" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sickjump_right" x="832" y="672" name="inst_4B2C3D80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

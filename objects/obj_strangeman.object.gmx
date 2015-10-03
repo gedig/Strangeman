@@ -269,7 +269,7 @@ spinSpeed = 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_strangeman,-1,x + xSpeed, y + ySpeed, 1, 1, spinAngle, c_white, 1);
+            <string>draw_sprite_ext(spr_strangeman,-1,x + xSpeed, y + ySpeed, image_xscale, 1, spinAngle, c_white, 1);
 //draw_self();
 </string>
           </argument>

@@ -45,6 +45,9 @@ leftOrRight = 1;
 onFloor = false;
 spinAngle = 0;
 spinSpeed = 0;
+
+image_xscale_ext = 0; //Additional scale variables, they lerp back to 0 and are added
+image_yscale_ext = 0; // to the normal scale. Use this for polish-related boopin' animations
 </string>
           </argument>
         </arguments>
@@ -134,12 +137,26 @@ if ( place_meeting( x, y + ySpeed, obj_floor_1)) {
     ySpeed = 0;
     vBool = true;
     if (yDirection = 270) {
+        
+        if (!onFloor) {
+            image_yscale_ext = -0.4; //Scale the player a bit to simulate some sort of landing animation
+            image_xscale_ext = 0.5;
+        }
+    
         onFloor = true;
         spinSpeed = 0;  // Snap the character back upright. If we want a wipeout if your
         spinAngle = 0;  // angle is a certain threshold then this is the place to do it.
     }
 } else {
     spinAngle = spinAngle + spinSpeed;
+    if (spinAngle &gt;= 360) { // Strangeman only does one flip when going off of a sick ramp!
+        spinAngle = 0;
+        spinSpeed = 0;
+        image_xscale_ext = 0.5;
+        image_yscale_ext = -0.25;
+        scr_starburst(x ,y , 8, 0, 360, 48, 5, 3);
+        ySpeed = -4;
+    }
     ySpeed += yGravity; 
     onFloor = false;
 }
@@ -154,6 +171,8 @@ ySpeed = clamp(ySpeed, -100, yGravityMax);
 if (onFloor and (keyboard_check_pressed( vk_up ) or keyboard_check_pressed( vk_space ))) {
     ySpeed -= jumpSpeed;
     onFloor = false;
+    image_yscale_ext = 0.5; //Scale the player a bit to simulate some sort of jumping animation
+    image_xscale_ext = -0.4;
 }
 
 // Door Check:
@@ -178,6 +197,10 @@ if (onFloor) {
 } else {
     image_index = 0;
 }
+
+// lerp the sprite back to its normal scale
+image_xscale_ext = lerp(image_xscale_ext, 0, 0.1);
+image_yscale_ext = lerp(image_yscale_ext, 0, 0.1);
 
 </string>
           </argument>
@@ -269,7 +292,7 @@ spinSpeed = 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_strangeman,-1,x + xSpeed, y + ySpeed, image_xscale, 1, spinAngle, c_white, 1);
+            <string>draw_sprite_ext(spr_strangeman,-1,x, y - 50*image_yscale_ext, image_xscale* (1 + image_xscale_ext), image_yscale * (1 + image_yscale_ext), spinAngle, c_white, 1);
 //draw_self();
 </string>
           </argument>

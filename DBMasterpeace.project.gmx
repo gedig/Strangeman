@@ -22,6 +22,7 @@
     <sprite>sprites\spr_squash</sprite>
     <sprite>sprites\spr_dark_tower_dolphin</sprite>
     <sprite>sprites\spr_sickjump</sprite>
+    <sprite>sprites\spr_star</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_main_room</background>
@@ -35,6 +36,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\PlacePlayerAtDoor.gml</script>
+    <script>scripts\scr_starburst.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_strangeman</object>
@@ -53,6 +55,7 @@
     <object>objects\obj_dolphin</object>
     <object>objects\obj_sickjump_right</object>
     <object>objects\obj_camera</object>
+    <object>objects\obj_star_particle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_load</room>

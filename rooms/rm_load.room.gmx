@@ -20,7 +20,7 @@ view_wport[0] = camera_view_width;
 view_hport[0] = camera_view_height;
 view_wview[0] = camera_view_width;
 view_hview[0] = camera_view_height;
-display_reset(8, false);
+display_reset(8, true);
 
 window_set_fullscreen(true);
 

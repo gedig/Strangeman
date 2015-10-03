@@ -33,6 +33,10 @@ anim_count = 0;
 door_id = 1; //This is THIS door's id, used when linking back to this room
 destination = room; // This is the room to navigate to, it CAN be the same room!
 destination_door_id = 1; // The ID of the door to spawn at in the new room.
+player_x_offset = 0;    // Mostly for on-contact doors, have to place the player off the door or it will instantly send them back.
+player_y_offset = -15;   // Most doors would trap the player in the ground right away, this pops them up a little bit so they can fall back down.
+activate_on_contact = false; // A boolean that determines whether a door will activate as soon as it's touched
+                             // or if the player has to push up to go through it
 
 //Hide the default door effects if a door skin has been placed on this door!
 if (place_meeting(x,y,obj_parent_door_skin)) {

@@ -165,7 +165,6 @@
     <instance objName="obj_floor_1" x="96" y="896" name="inst_26D94BA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_1" x="64" y="896" name="inst_06632607" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_1" x="32" y="864" name="inst_0745AE95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floor_1" x="32" y="736" name="inst_61AB30F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_1" x="32" y="704" name="inst_701684AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_1" x="32" y="672" name="inst_A6881A66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_1" x="32" y="640" name="inst_9DC831ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -251,7 +250,7 @@
     <instance objName="obj_cloud_1" x="64" y="32" name="inst_2F7C73FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="1216" y="832" name="inst_44689104" locked="0" code="door_id = 1;&#xA;destination = rm_dark_tower;&#xA;destination_door_id = 1;&#xA;" scaleX="2" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_sickjump_right" x="1536" y="800" name="inst_5DEBA479" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="448" y="832" name="inst_248BDE33" locked="0" code="door_id = 3;&#xA;destination = rm_connector_cave;&#xA;destination_door_id = 1;&#xA;" scaleX="2" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="448" y="832" name="inst_248BDE33" locked="0" code="door_id = 3;&#xA;destination = rm_connector_cave;&#xA;destination_door_id = 1;" scaleX="2" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="575" y="672" name="inst_10E7BBF5" locked="0" code="door_id = 2;&#xA;destination = rm_connector_cave;&#xA;destination_door_id = 2;&#xA;" scaleX="2" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_1" x="512" y="736" name="inst_8FD64F43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_1" x="608" y="736" name="inst_1E6ED440" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -722,7 +721,6 @@
     <instance objName="obj_floor_1" x="0" y="640" name="inst_DEA23D2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_1" x="0" y="672" name="inst_7ACC67DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_1" x="0" y="704" name="inst_181708E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floor_1" x="0" y="736" name="inst_4C5419B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_1" x="0" y="864" name="inst_9597803D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_cave" x="544" y="608" name="inst_305201B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_cave" x="416" y="768" name="inst_130657B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -821,6 +819,8 @@
     <instance objName="obj_dungeon_tile" x="1120" y="736" name="inst_26E46F5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="1280" y="736" name="inst_0D9E9C5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gourdon" x="608" y="832" name="inst_9ABF259B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="0" y="800" name="inst_984B91E5" locked="0" code="visible = false;&#xA;door_id = 4;&#xA;player_x_offset = 64;&#xA;player_y_offset = 0;&#xA;destination = rm_main;&#xA;destination_door_id = 5;&#xA;activate_on_contact = true;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="1921" y="209" name="inst_3C916B03" locked="0" code="visible = false;&#xA;door_id = 5;&#xA;player_x_offset = -64;&#xA;player_y_offset = 0;&#xA;destination = rm_main;&#xA;destination_door_id = 4;&#xA;activate_on_contact = true;&#xA;" scaleX="1.9375" scaleY="1.46875" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_dirt_tiles" x="1856" y="672" w="64" h="64" xo="0" yo="0" id="10000356" name="inst_ACE42843" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1015,8 +1015,9 @@
     <tile bgName="bg_dirt_tiles" x="1728" y="224" w="64" h="64" xo="70" yo="0" id="10000635" name="inst_B111FB0B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dirt_tiles" x="1184" y="128" w="64" h="64" xo="134" yo="0" id="10000657" name="inst_4EBC93C7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dirt_tiles" x="608" y="416" w="64" h="64" xo="70" yo="0" id="10000659" name="inst_0F95AD3B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_dirt_tiles" x="0" y="768" w="64" h="64" xo="6" yo="0" id="10000665" name="inst_1C2538FE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dirt_tiles" x="0" y="832" w="64" h="64" xo="6" yo="0" id="10000666" name="inst_3692BA35" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_dirt_tiles" x="0" y="768" w="64" h="64" xo="6" yo="0" id="10000681" name="inst_2AC0033C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_dirt_tiles" x="0" y="704" w="64" h="64" xo="6" yo="0" id="10000682" name="inst_02626121" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower_3" x="1184" y="128" w="64" h="64" xo="0" yo="0" id="10000638" name="inst_2EB790A8" depth="99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower_3" x="1184" y="384" w="64" h="64" xo="0" yo="0" id="10000639" name="inst_F06F0031" depth="99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower_3" x="1248" y="352" w="64" h="64" xo="0" yo="0" id="10000642" name="inst_CB84A4C2" depth="99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

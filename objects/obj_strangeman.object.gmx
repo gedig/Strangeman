@@ -185,14 +185,13 @@ if (onFloor and jumpQueued) {
 var door = instance_place( x, y, obj_door );
 if (door != noone) {
     // We are on a door.
-    if (keyboard_check_pressed( vk_up )) {
+    if (door.activate_on_contact == true || keyboard_check_pressed( vk_up )) {
         if (door.destination == room) {
             PlacePlayerAtDoor(door.destination_door_id);
         } else {
             global.destination_door_id = door.destination_door_id;
             room_goto(door.destination);
         }
-
     }
 }
 

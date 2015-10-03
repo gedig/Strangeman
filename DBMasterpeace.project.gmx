@@ -30,6 +30,7 @@
     <background>background\bg_dark_tower_3</background>
     <background>background\bg_dark_tower_4</background>
     <background>background\bg_dark_tower_5</background>
+    <background>background\bg_dirt</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -51,6 +52,7 @@
     <object>objects\obj_skwunchkin</object>
     <object>objects\obj_dolphin</object>
     <object>objects\obj_sickjump_right</object>
+    <object>objects\obj_camera</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_load</room>

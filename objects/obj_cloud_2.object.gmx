@@ -3,7 +3,7 @@
   <spriteName>spr_cloud2</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>9999999</depth>
   <persistent>0</persistent>
   <parentName>obj_cloud_1</parentName>
   <maskName>&lt;undefined&gt;</maskName>

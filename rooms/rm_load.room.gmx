@@ -12,6 +12,19 @@
   <showcolour>-1</showcolour>
   <code>//Initialize Global Variables for later use
 global.destination_door_id = -1;
+
+globalvar camera_view_width, camera_view_height;
+camera_view_width = display_get_width();
+camera_view_height = display_get_height();
+view_wport[0] = camera_view_width;
+view_hport[0] = camera_view_height;
+view_wview[0] = camera_view_width;
+view_hview[0] = camera_view_height;
+display_reset(8, false);
+
+window_set_fullscreen(true);
+
+//We're done here: start the game
 room_goto_next();</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

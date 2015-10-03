@@ -22,7 +22,9 @@
     <sprite>sprites\spr_squash</sprite>
     <sprite>sprites\spr_dark_tower_dolphin</sprite>
     <sprite>sprites\spr_sickjump</sprite>
-    <sprite>sprites\spr_star</sprite>
+    <sprite>sprites\spr_sickjump_left</sprite>
+    <sprite>sprites\spr_particle</sprite>
+    <sprite>sprites\spr_cave_door</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_main_room</background>
@@ -31,6 +33,7 @@
     <background>background\bg_dark_tower_3</background>
     <background>background\bg_dark_tower_4</background>
     <background>background\bg_dark_tower_5</background>
+    <background>background\bg_dirt_tiles</background>
     <background>background\bg_dirt</background>
   </backgrounds>
   <paths name="paths"/>
@@ -54,13 +57,17 @@
     <object>objects\obj_skwunchkin</object>
     <object>objects\obj_dolphin</object>
     <object>objects\obj_sickjump_right</object>
+    <object>objects\obj_sickjump_left</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_star_particle</object>
+    <object>objects\obj_parent_door_skin</object>
+    <object>objects\obj_door_cave</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_load</room>
     <room>rooms\rm_main</room>
     <room>rooms\rm_dark_tower</room>
+    <room>rooms\rm_connector_cave</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

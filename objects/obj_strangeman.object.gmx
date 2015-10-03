@@ -43,6 +43,7 @@ upOrDown = -1;
 leftOrRight = 1;
 
 onFloor = false;
+jumpQueued = false;
 spinAngle = 0;
 spinSpeed = 0;
 
@@ -149,12 +150,12 @@ if ( place_meeting( x, y + ySpeed, obj_floor_1)) {
     }
 } else {
     spinAngle = spinAngle + spinSpeed;
-    if (spinAngle &gt;= 360) { // Strangeman only does one flip when going off of a sick ramp!
+    if (spinAngle &gt;= 360 || spinAngle &lt;= -360) { // Strangeman only does one flip when going off of a sick ramp!
         spinAngle = 0;
         spinSpeed = 0;
         image_xscale_ext = 0.5;
         image_yscale_ext = -0.25;
-        scr_starburst(x ,y , 8, 0, 360, 48, 5, 3);
+        scr_starburst(x ,y , 8, 0, 360, 48, 5, 3, 0);
         ySpeed = -4;
     }
     ySpeed += yGravity; 
@@ -168,11 +169,16 @@ if ((!hBool and !vBool) and place_meeting(x + xSpeed, y + ySpeed, obj_floor_1)) 
 ySpeed = clamp(ySpeed, -100, yGravityMax);
 
 //Jumperoni
-if (onFloor and (keyboard_check_pressed( vk_up ) or keyboard_check_pressed( vk_space ))) {
+if (keyboard_check_pressed( vk_up ) or keyboard_check_pressed( vk_space )) {
+    jumpQueued = true;
+}
+if (onFloor and jumpQueued) {
     ySpeed -= jumpSpeed;
     onFloor = false;
+    jumpQueued = false;
     image_yscale_ext = 0.5; //Scale the player a bit to simulate some sort of jumping animation
     image_xscale_ext = -0.4;
+    scr_starburst(x ,y + 20, 8, 270, 180, 32, 1, 1, 1);
 }
 
 // Door Check:
@@ -202,6 +208,32 @@ if (onFloor) {
 image_xscale_ext = lerp(image_xscale_ext, 0, 0.1);
 image_yscale_ext = lerp(image_yscale_ext, 0, 0.1);
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_sickjump_left">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>ySpeed = -20;
+xSpeed = -20;
+
+spinSpeed = -10;
 </string>
           </argument>
         </arguments>

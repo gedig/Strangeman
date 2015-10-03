@@ -57,13 +57,45 @@ view_enabled = true;
 view_visible[0] = true;
 view_wport[0] = camera_view_width;
 view_hport[0] = camera_view_height;
-view_wview[0] = camera_view_width;
-view_hview[0] = camera_view_height;
+view_wview[0] = camera_view_width/2;
+view_hview[0] = camera_view_height/2;
 
 view_hborder[0] = camera_view_width;
 view_vborder[0] = camera_view_height;
 
 view_object[0] = obj_camera;
+
+display_reset(8,true);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+draw_set_alpha(0.9);
+draw_set_colour(c_gray);
+ draw_rectangle(0,0,128,48, false);
+draw_set_alpha(1);
+draw_set_colour(c_white);
+ draw_text(8,8, string(camera_view_width) + " x " + string(camera_view_height));
+ draw_text(8,24, string(fps) + "  :  " + string(fps_real));
 </string>
           </argument>
         </arguments>

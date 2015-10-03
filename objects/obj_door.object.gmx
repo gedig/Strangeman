@@ -3,7 +3,7 @@
   <spriteName>spr_door</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>99</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -33,6 +33,11 @@ anim_count = 0;
 door_id = 1; //This is THIS door's id, used when linking back to this room
 destination = room; // This is the room to navigate to, it CAN be the same room!
 destination_door_id = 1; // The ID of the door to spawn at in the new room.
+
+//Hide the default door effects if a door skin has been placed on this door!
+if (place_meeting(x,y,obj_parent_door_skin)) {
+    visible = false;
+}
 </string>
           </argument>
         </arguments>

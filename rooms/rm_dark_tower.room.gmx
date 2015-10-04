@@ -332,27 +332,25 @@ background_alpha[1] = 0.75;</code>
     <instance objName="obj_dungeon_tile" x="992" y="288" name="inst_69FC9A6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="1024" y="288" name="inst_C5AEE363" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="1056" y="288" name="inst_2CF6A6D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dungeon_tile" x="1056" y="256" name="inst_AAC151FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="1024" y="256" name="inst_E71DAEBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="992" y="256" name="inst_38B56EFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="960" y="256" name="inst_EB2A125A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="928" y="256" name="inst_B60C47BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="896" y="256" name="inst_A5A97311" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="864" y="256" name="inst_8B439668" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dungeon_tile" x="832" y="256" name="inst_A96659E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="864" y="224" name="inst_9A962CB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dungeon_tile" x="864" y="192" name="inst_DC69777F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="896" y="192" name="inst_953820C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="928" y="192" name="inst_6B1DD274" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="960" y="192" name="inst_005BF978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="992" y="192" name="inst_1AC40CDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dungeon_tile" x="1024" y="192" name="inst_3C089757" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="1024" y="224" name="inst_60D8A3AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dungeon_tile" x="928" y="224" name="inst_8A21ACBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mouth" x="320" y="736" name="inst_C46EC8D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mouth" x="256" y="864" name="inst_780DEEB2" locked="0" code="" scaleX="1" scaleY="-1.33333337306976" colour="4294967295" rotation="0"/>
     <instance objName="obj_dolphin" x="544" y="1344" name="inst_EBA40547" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sickjump_right" x="1088" y="480" name="inst_89E4B981" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dungeon_tile" x="1056" y="256" name="inst_69DC1986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dungeon_tile" x="832" y="256" name="inst_2D090112" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_dark_tower" x="320" y="704" w="32" h="32" xo="0" yo="0" id="10000079" name="inst_CBF098D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -383,11 +381,9 @@ background_alpha[1] = 0.75;</code>
     <tile bgName="bg_dark_tower_3" x="256" y="640" w="64" h="64" xo="0" yo="0" id="10000104" name="inst_DF41511A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower_3" x="320" y="448" w="64" h="64" xo="0" yo="0" id="10000105" name="inst_799B0FD2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower_3" x="320" y="512" w="64" h="64" xo="0" yo="0" id="10000106" name="inst_7B34A154" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_dark_tower_3" x="352" y="608" w="64" h="64" xo="0" yo="0" id="10000107" name="inst_BD192494" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower_3" x="320" y="640" w="64" h="64" xo="0" yo="0" id="10000108" name="inst_62EE6B56" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower_3" x="384" y="448" w="64" h="64" xo="0" yo="0" id="10000115" name="inst_C267EB28" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower_3" x="384" y="512" w="64" h="64" xo="0" yo="0" id="10000116" name="inst_23AB7DA5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_dark_tower_3" x="384" y="576" w="64" h="64" xo="0" yo="0" id="10000117" name="inst_26BF34E4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower_3" x="384" y="640" w="64" h="64" xo="0" yo="0" id="10000118" name="inst_4F28C2E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower_3" x="448" y="448" w="64" h="64" xo="0" yo="0" id="10000119" name="inst_02D6B917" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower_3" x="448" y="512" w="64" h="64" xo="0" yo="0" id="10000120" name="inst_1EC2ECC1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -447,8 +443,8 @@ background_alpha[1] = 0.75;</code>
     <tile bgName="bg_dark_tower" x="896" y="224" w="32" h="32" xo="0" yo="0" id="10000180" name="inst_4FAD16C7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower" x="992" y="224" w="32" h="32" xo="0" yo="0" id="10000181" name="inst_998E6624" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_dark_tower" x="960" y="224" w="32" h="32" xo="0" yo="0" id="10000182" name="inst_61455205" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_dark_tower_3" x="352" y="576" w="64" h="64" xo="0" yo="0" id="10000183" name="inst_164A10CD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_dark_tower_3" x="320" y="576" w="64" h="64" xo="0" yo="0" id="10000184" name="inst_633A7176" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_dark_tower_3" x="320" y="576" w="64" h="64" xo="0" yo="0" id="10000683" name="inst_CC63AD48" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_dark_tower_3" x="384" y="576" w="64" h="64" xo="0" yo="0" id="10000684" name="inst_3509A3AA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

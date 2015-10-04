@@ -11,6 +11,7 @@
     <sprite>sprites\spr_floor_1</sprite>
     <sprite>sprites\spr_skateboard</sprite>
     <sprite>sprites\spr_gourdon</sprite>
+    <sprite>sprites\spr_squashman</sprite>
     <sprite>sprites\spr_hair</sprite>
     <sprite>sprites\spr_cloud1</sprite>
     <sprite>sprites\spr_cloud2</sprite>
@@ -25,6 +26,7 @@
     <sprite>sprites\spr_sickjump_left</sprite>
     <sprite>sprites\spr_particle</sprite>
     <sprite>sprites\spr_cave_door</sprite>
+    <sprite>sprites\spr_speech</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_main_room</background>
@@ -35,6 +37,7 @@
     <background>background\bg_dark_tower_5</background>
     <background>background\bg_dirt_tiles</background>
     <background>background\bg_dirt</background>
+    <background>background\bg_black</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -53,6 +56,7 @@
     <object>objects\obj_door</object>
     <object>objects\obj_dungeon_tile</object>
     <object>objects\obj_gourdon</object>
+    <object>objects\obj_squashman</object>
     <object>objects\obj_mouth</object>
     <object>objects\obj_skwunchkin</object>
     <object>objects\obj_dolphin</object>
@@ -62,6 +66,8 @@
     <object>objects\obj_star_particle</object>
     <object>objects\obj_parent_door_skin</object>
     <object>objects\obj_door_cave</object>
+    <object>objects\obj_voice</object>
+    <object>objects\obj_speech</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_load</room>

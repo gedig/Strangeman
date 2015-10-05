@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var count = audio_get_recorder_count();
+            <string>
+var count = audio_get_recorder_count();
 if (count == 1) {
     audio_recorder = 0;
 }

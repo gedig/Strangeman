@@ -821,6 +821,7 @@
     <instance objName="obj_gourdon" x="608" y="832" name="inst_9ABF259B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="0" y="800" name="inst_984B91E5" locked="0" code="visible = false;&#xA;door_id = 4;&#xA;player_x_offset = 64;&#xA;player_y_offset = 0;&#xA;destination = rm_main;&#xA;destination_door_id = 5;&#xA;activate_on_contact = true;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="1921" y="209" name="inst_3C916B03" locked="0" code="visible = false;&#xA;door_id = 5;&#xA;player_x_offset = -64;&#xA;player_y_offset = 0;&#xA;destination = rm_main;&#xA;destination_door_id = 4;&#xA;activate_on_contact = true;&#xA;" scaleX="1.9375" scaleY="1.46875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_voice" x="96" y="800" name="inst_E0BDD190" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_dirt_tiles" x="0" y="736" w="64" h="64" xo="70" yo="0" id="10001424" name="inst_D0837249" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

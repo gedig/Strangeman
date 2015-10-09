@@ -53,21 +53,15 @@
             <string>
 instance_create(obj_strangeman.x, obj_strangeman.y, obj_camera);
 
+view_enabled = true;
+view_visible[0] = true;
+view_wport[0] = camera_view_width;
+view_hport[0] = camera_view_height;
+view_wview[0] = camera_view_width/2;
+view_hview[0] = camera_view_height/2;
 
-    view_enabled = true;
-    view_visible[0] = true;
-    if (os_type != os_windows) {
-        view_wport[0] = camera_view_width;
-        view_hport[0] = camera_view_height;
-    } else {
-        view_wport[0] = camera_view_width/2;
-        view_hport[0] = camera_view_height/2;
-    }
-    view_wview[0] = camera_view_width/2;
-    view_hview[0] = camera_view_height/2;
-    
-    view_hborder[0] = camera_view_width;
-    view_vborder[0] = camera_view_height;
+view_hborder[0] = camera_view_width;
+view_vborder[0] = camera_view_height;
 
 view_object[0] = obj_camera;
 

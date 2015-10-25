@@ -27,7 +27,6 @@
     <sprite>sprites\spr_particle</sprite>
     <sprite>sprites\spr_cave_door</sprite>
     <sprite>sprites\spr_speech</sprite>
-    <sprite>sprites\sprite21</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_main_room</background>
@@ -75,6 +74,7 @@
     <room>rooms\rm_main</room>
     <room>rooms\rm_dark_tower</room>
     <room>rooms\rm_connector_cave</room>
+    <room>rooms\rm_weird</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

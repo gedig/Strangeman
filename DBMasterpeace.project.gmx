@@ -28,6 +28,7 @@
     <sprite>sprites\spr_cave_door</sprite>
     <sprite>sprites\spr_speech</sprite>
     <sprite>sprites\spr_pencilbee</sprite>
+    <sprite>sprites\spr_badfly</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_main_room</background>
@@ -70,6 +71,7 @@
     <object>objects\obj_voice</object>
     <object>objects\obj_speech</object>
     <object>objects\obj_pencilbee</object>
+    <object>objects\obj_badfly</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_load</room>

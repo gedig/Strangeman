@@ -41,7 +41,9 @@
     <background>background\bg_dirt</background>
     <background>background\bg_black</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_sample</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\PlacePlayerAtDoor.gml</script>
     <script>scripts\scr_starburst.gml</script>

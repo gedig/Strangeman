@@ -33,6 +33,7 @@ xMoveSpeed = 1;
 
 yGravity = 1;
 yGravityMax = 8;
+optionalDownSpeed = 14
 
 xDirection = 0;
 yDirection = 270;
@@ -85,9 +86,10 @@ if (xSpeed &gt; 1 || xSpeed &lt; -1 || ySpeed &gt; 1 || ySpeed &lt; -1) { // Any
 
 //Inputs
 if (keyboard_check(ord('R'))) { room_restart(); }
-var inputLeft = false, inputRight = false;
+var inputLeft = false, inputRight = false, inputDown = false;
  if ( keyboard_check( vk_left)) { inputLeft = true; }
  if ( keyboard_check( vk_right)) { inputRight = true; }
+ if ( keyboard_check( vk_down) ) { inputDown = true; }
 
     if (inputLeft) {
         xSpeed -= xMoveSpeed;
@@ -96,8 +98,8 @@ var inputLeft = false, inputRight = false;
     } else {
         xSpeed /= 1.1;
     }
-
-xSpeed = clamp(xSpeed, -xMoveSpeedMax, xMoveSpeedMax);
+    
+xSpeed = clamp(xSpeed, -xMoveSpeedMax, xMoveSpeedMax); 
     
 //Update xDirection
 if (xSpeed &gt; 0) {
@@ -158,15 +160,25 @@ if ( place_meeting( x, y + ySpeed, obj_floor_1)) {
         scr_starburst(x ,y , 8, 0, 360, 48, 5, 3, 0);
         ySpeed = -4;
     }
-    ySpeed += yGravity; 
+    if (!place_meeting( x, y + ySpeed, obj_sickjump_right) &amp;&amp; !place_meeting( x, y + ySpeed, obj_sickjump_left)) {
+        if (inputDown) {
+            ySpeed += optionalDownSpeed;
+        } else {
+            ySpeed += yGravity;
+        }    
+    }
+ 
     onFloor = false;
 }
 
 if ((!hBool and !vBool) and place_meeting(x + xSpeed, y + ySpeed, obj_floor_1)) {
     xSpeed = 0;
 }
-
-ySpeed = clamp(ySpeed, -100, yGravityMax);
+if (inputDown) {
+    ySpeed = clamp(ySpeed, -100, optionalDownSpeed);
+} else {
+    ySpeed = clamp(ySpeed, -100, yGravityMax);    
+}
 
 //Jumperoni
 if (keyboard_check_pressed( vk_up ) or keyboard_check_pressed( vk_space )) {
@@ -196,8 +208,9 @@ if (door != noone) {
 }
 
 y += ySpeed;
-
-if (onFloor) {
+if (inputDown) {
+    image_index = 2;
+} else if (onFloor) {
     image_index = 1;
 } else {
     image_index = 0;

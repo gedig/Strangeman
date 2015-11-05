@@ -27,6 +27,7 @@
     <sprite>sprites\spr_particle</sprite>
     <sprite>sprites\spr_cave_door</sprite>
     <sprite>sprites\spr_speech</sprite>
+    <sprite>sprites\spr_pencilbee</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_main_room</background>
@@ -68,12 +69,14 @@
     <object>objects\obj_door_cave</object>
     <object>objects\obj_voice</object>
     <object>objects\obj_speech</object>
+    <object>objects\obj_pencilbee</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_load</room>
     <room>rooms\rm_main</room>
     <room>rooms\rm_dark_tower</room>
     <room>rooms\rm_connector_cave</room>
+    <room>rooms\rm_weird</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

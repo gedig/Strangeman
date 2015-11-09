@@ -29,6 +29,8 @@
     <sprite>sprites\spr_speech</sprite>
     <sprite>sprites\spr_pencilbee</sprite>
     <sprite>sprites\spr_badfly</sprite>
+    <sprite>sprites\spr_floor_2</sprite>
+    <sprite>sprites\spr_tooth</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_main_room</background>
@@ -74,6 +76,8 @@
     <object>objects\obj_speech</object>
     <object>objects\obj_pencilbee</object>
     <object>objects\obj_badfly</object>
+    <object>objects\obj_floor_2</object>
+    <object>objects\obj_tooth</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_load</room>
@@ -81,6 +85,7 @@
     <room>rooms\rm_dark_tower</room>
     <room>rooms\rm_connector_cave</room>
     <room>rooms\rm_weird</room>
+    <room>rooms\rm_ode_to_teeth</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

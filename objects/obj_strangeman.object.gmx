@@ -50,6 +50,7 @@ spinSpeed = 0;
 
 image_xscale_ext = 0; //Additional scale variables, they lerp back to 0 and are added
 image_yscale_ext = 0; // to the normal scale. Use this for polish-related boopin' animations
+m_alpha = 1;
 </string>
           </argument>
         </arguments>
@@ -116,7 +117,7 @@ if (xSpeed &lt; 0) {
 var hBool = false, vBool = false;
 
 //check for wall
-if ( place_meeting( x + xSpeed, y + upOrDown, obj_floor_1)) {
+if ( place_meeting( x + xSpeed, y + upOrDown, obj_floor_1) || place_meeting( x+xSpeed, y + upOrDown, obj_floor_2)) {
     move_contact_solid(xDirection, abs(xSpeed));
     xSpeed = 0;
     hBool = true;
@@ -135,7 +136,7 @@ if (ySpeed &lt; 0) {
 }
 
 //Gravity stuff
-if ( place_meeting( x, y + ySpeed, obj_floor_1)) {
+if ( place_meeting( x, y + ySpeed, obj_floor_1) || place_meeting( x, y + ySpeed, obj_floor_2)) {
     move_contact_solid(yDirection, abs(ySpeed));
     ySpeed = 0;
     vBool = true;
@@ -171,7 +172,7 @@ if ( place_meeting( x, y + ySpeed, obj_floor_1)) {
     onFloor = false;
 }
 
-if ((!hBool and !vBool) and place_meeting(x + xSpeed, y + ySpeed, obj_floor_1)) {
+if ((!hBool and !vBool) and (place_meeting(x + xSpeed, y + ySpeed, obj_floor_1) or place_meeting(x + xSpeed, y+ySpeed, obj_floor_2))) {
     xSpeed = 0;
 }
 if (inputDown) {
@@ -225,6 +226,32 @@ image_yscale_ext = lerp(image_yscale_ext, 0, 0.1);
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_tooth">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>m_alpha</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-.1</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_badfly">
       <action>
         <libid>1</libid>
@@ -254,7 +281,7 @@ image_yscale_ext = lerp(image_yscale_ext, 0, 0.1);
           </argument>
           <argument>
             <kind>4</kind>
-            <string>2</string>
+            <string>1</string>
           </argument>
           <argument>
             <kind>13</kind>
@@ -378,7 +405,7 @@ spinSpeed = 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_strangeman,-1,x, y - 50*image_yscale_ext, image_xscale* (1 + image_xscale_ext), image_yscale * (1 + image_yscale_ext), spinAngle, c_white, 1);
+            <string>draw_sprite_ext(spr_strangeman,-1,x, y - 50*image_yscale_ext, image_xscale* (1 + image_xscale_ext), image_yscale * (1 + image_yscale_ext), spinAngle, c_white, m_alpha);
 //draw_self();
 </string>
           </argument>

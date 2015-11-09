@@ -559,6 +559,7 @@ background_alpha[1] = 0.75;</code>
     <instance objName="obj_mouth" x="1856" y="1120" name="inst_D9FB6253" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="90"/>
     <instance objName="obj_mouth" x="1126" y="1052" name="inst_D7BB1E3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cloud_1" x="1120" y="640" name="inst_7E4F5DA4" locked="0" code="" scaleX="1.5" scaleY="1" colour="1602224128" rotation="0"/>
+    <instance objName="obj_door" x="736" y="1088" name="inst_92ED8B5C" locked="0" code="visible = false;&#xA;door_id = 2;&#xA;destination = rm_ode_to_teeth;&#xA;destination_door_id = 1;&#xA;activate_on_contact = true;&#xA;" scaleX="8.5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_dark_tower" x="320" y="704" w="32" h="32" xo="0" yo="0" id="10000079" name="inst_CBF098D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
